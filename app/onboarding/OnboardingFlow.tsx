@@ -29,37 +29,37 @@ const focusAreas = [
     id: "deep-work",
     title: "Deep Work",
     icon: LucideCode,
-    desc: "Mastering concentration and peak productivity states.",
+    description: "Mastering concentration and peak productivity states.",
   },
   {
     id: "health",
     title: "Health & Vitality",
     icon: LucideActivity,
-    desc: "Optimizing sleep, nutrition, and physical movement.",
+    description: "Optimizing sleep, nutrition, and physical movement.",
   },
   {
     id: "learning",
     title: "Fast Learning",
     icon: LucideBookOpen,
-    desc: "Accelerated skill acquisition and knowledge retention.",
+    description: "Accelerated skill acquisition and knowledge retention.",
   },
   {
     id: "mindfulness",
     title: "Mindfulness",
     icon: LucideRefreshCw,
-    desc: "Daily presence, stress management and mental clarity.",
+    description: "Daily presence, stress management and mental clarity.",
   },
   {
     id: "networking",
     title: "Networking",
     icon: LucideUsers,
-    desc: "Building meaningful connections and community.",
+    description: "Building meaningful connections and community.",
   },
   {
     id: "wealth",
     title: "Wealth Habits",
     icon: LucideTrendingUp,
-    desc: "Developing financial literacy and investment routines.",
+    description: "Developing financial literacy and investment routines.",
   },
 ];
 
@@ -166,17 +166,20 @@ export function OnboardingFlow() {
                 {
                   title: "Adaptive",
                   icon: LucideRefreshCw,
-                  desc: "Schedules that flex around your life, not the other way around.",
+                  description:
+                    "Schedules that flex around your life, not the other way around.",
                 },
                 {
                   title: "Zero Guilt",
                   icon: LucideHeart,
-                  desc: "Missed a day? No problem. We automatically recalibrate for you.",
+                  description:
+                    "Missed a day? No problem. We automatically recalibrate for you.",
                 },
                 {
                   title: "Resilient",
                   icon: LucideZap,
-                  desc: "Built for the ups and downs of students and founders.",
+                  description:
+                    "Built for the ups and downs of students and founders.",
                 },
               ].map((item) => (
                 <div
@@ -190,7 +193,7 @@ export function OnboardingFlow() {
                     {item.title}
                   </h3>
                   <p className="text-[11px] text-muted-foreground font-light leading-relaxed">
-                    {item.desc}
+                    {item.description}
                   </p>
                 </div>
               ))}
@@ -259,25 +262,25 @@ export function OnboardingFlow() {
                       id: "student",
                       title: "Student",
                       icon: LucideGraduationCap,
-                      desc: "Managing studies & campus life",
+                      description: "Managing studies & campus life",
                     },
                     {
                       id: "founder",
                       title: "Founder",
                       icon: LucideFlame,
-                      desc: "Building products & teams",
+                      description: "Building products & teams",
                     },
                     {
                       id: "professional",
                       title: "Professional",
                       icon: LucideBriefcase,
-                      desc: "Navigating career & growth",
+                      description: "Navigating career & growth",
                     },
                     {
                       id: "freelancer",
                       title: "Freelancer",
                       icon: LucideTrendingUp,
-                      desc: "Solo creator or consultant",
+                      description: "Solo creator or consultant",
                     },
                   ].map((path) => (
                     <OnboardingCard
